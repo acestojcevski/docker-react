@@ -1,4 +1,4 @@
-sudo: required
+root: required
 services:
     - docker
 
@@ -6,7 +6,7 @@ before_install:
     - docker build -t acestojcevski/docker-react .
 
 script:
-    - docker run acestojcevski/docker-react
+    - docker run acestojcevski/docker-react -d
 
 deploy:
     provider: elasticbeanstalk
