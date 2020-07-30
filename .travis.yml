@@ -6,7 +6,7 @@ before_install:
     - docker build -t acestojcevski/docker-react .
 
 script:
-    - docker run acestojcevski/docker-react -d
+    - docker run -d acestojcevski/docker-react
 
 deploy:
     provider: elasticbeanstalk
